@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/eliminar_usu.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form">
+            <h2>Eliminar:</h2>
+            <form id="form" class="form">
+                <div class="contenedor-input">
+                    <label>
+                        Nombre <span>:</span>
+                    </label>
+                    <input type="text" id="dato1">
+                </div>
+                <button id="consulta">Consultar</button>
+            </form>
+        </div>
+        <table id="tabla-productos">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="idu"></td>
+                    <td id="nombreu"></td>
+                    <td id="usuariou"></td>
+                    <td id="correou"></td>
+                    <td id="rolu"></td>
+                    <td id="btndel"></td>
+                </tr>
+                <tr id="confirmar">
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script type="module" src="../Js/eliminar_usu.js"></script>
+</body>
+</html>

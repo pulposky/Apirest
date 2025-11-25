@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Producto</title>
+    <link rel="stylesheet" href="../Css/actualizar_pro.css">
+</head>
+<body>
+    <div class="form">
+        <h2>Actualizar:</h2>
+        <div class="form">
+            <form id="form contenedor2" class="form">
+                <div class="contenedor-input">
+                    <h3>Consultar:</h3>
+                    <label>
+                        Nombre <span>:</span>
+                    </label>
+                    <input type="text" id="dato1">
+                </div>
+                <button  id="consulta">Consultar</button>
+                    <div class="txt" id="exito"></div>
+                    <div class="txt" id="error"></div>
+            </form>
+
+        <form id="contenedor" class="form">
+            <div class="contenedor-input">
+                <label for="id">ID</label>
+                <input type="text" id="idp" name="idp" placeholder="ID del producto">
+            </div>
+            <div class="contenedor-input">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombrep" name="nombrep" placeholder="Nombre del producto">
+            </div>
+            <div class="contenedor-input">
+                <label for="descripcion">Descripción</label>
+                <input type="text" id="descripcionp" name="descripcionp" placeholder="Descripción">
+            </div>
+            <div class="contenedor-input">
+                <label for="cantidad">Cantidad</label>
+                <input type="text" id="cantidadp" name="cantidadp" placeholder="Cantidad">
+            </div>
+            <div class="contenedor-input">
+                <label for="precio">Precio</label>
+                <input type="text" id="preciop" name="preciop" placeholder="Precio">
+            </div>
+            <button type="submit" id="actualizar">Actualizar producto</button>
+        </form>
+    </div>
+    <script type="module" src="../Js/actualziar_pro.js"></script>
+</body>
+</html>

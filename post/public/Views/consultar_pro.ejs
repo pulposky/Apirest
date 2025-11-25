@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/consular_pro.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form">
+            <h2>Consultar:</h2>
+            <form id="form" class="form">
+                <div class="contenedor-input">
+                    <label>
+                        Nombre <span>:</span>
+                    </label>
+                    <input type="text" id="dato1">
+                </div>
+                <button id="consulta">Consultar</button>
+                    <div class="txt" id="exito"></div>
+                    <div class="txt" id="error"></div>
+            </form>
+        </div>
+        <table id="tabla-productos">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Imagenes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row" id="idp"></td>
+                    <td id="nombrep"></td>
+                    <td id="descripcionp"></td>
+                    <td id="preciop"></td>
+                    <td id="cantidadp"></td>
+                    <td id="imagenes"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script type="module" src="../Js/consultar_pro.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "nombre": "alejo",
+        "nombreUsu": "pulpo",
+        "password": "hjaszxc01",
+        "correo": "alejogarcia0324@gmail.com",
+        "telefono": "3124282291",
+        "rol": "Administrador",
+        "foto": ""
+    },
+    {
+        "id": 2,
+        "nombre": "aleja",
+        "nombreUsu": "pulpa",
+        "password": "hjaszxc01",
+        "correo": "alejagarcia0324@gmail.com",
+        "telefono": "3124282291",
+        "rol": "Aprendiz",
+        "foto": ""
+    },
+    {
+        "id": 3,
+        "nombre": "prueba",
+        "nombreUsu": "pulpa",
+        "password": "hjaszxc01",
+        "correo": "alejagarcia0324",
+        "telefono": "3124282291",
+        "rol": "Aprendiz",
+        "foto": ""
+    },
+    {
+        "id": 5,
+        "nombre": "s",
+        "nombreUsu": "s",
+        "password": "s",
+        "correo": "s",
+        "telefono": "s",
+        "foto": "public\\Adse\\fotoperfil\\WallpaperEngineLockOverride_randomBFGFTC.jpeg"
+    },
+    {
+        "id": 6,
+        "nombre": "U",
+        "nombreUsu": "u",
+        "password": "$2b$10$fl4ojar3U3gsY7V.6Y.il..iAuIdnitZQVg1ss.m/ikIoJvlT8qMe",
+        "correo": "u",
+        "telefono": "0",
+        "foto": "public\\Adse\\fotoperfil\\WallpaperEngineLockOverride_randomGBUDAS.jpeg"
+    },
+    {
+        "id": 7,
+        "nombre": "i",
+        "nombreUsu": "i",
+        "password": "$2b$10$Eh/2w40gpSEJdFl.gjWAgeAgOqQAt9igFpSm7069DKxJQl.CX57Py",
+        "correo": "i",
+        "telefono": "0",
+        "foto": "public\\Adse\\fotoperfil\\WallpaperEngineLockOverride_randomCATSEJ.jpeg"
+    }
+]

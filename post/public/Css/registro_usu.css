@@ -1,0 +1,15 @@
+body{
+    background-color:rgb(134, 129, 129) ;
+}
+
+
+.contenedor-input{
+    margin-bottom: 20px;
+}
+
+#registrarse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

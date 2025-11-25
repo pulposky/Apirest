@@ -1,0 +1,113 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #181c24;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.login-page {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background: #232946;
+    padding: 28px 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px #10162499;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
+    max-width: 400px;
+    border: 1px solid #232946;
+}
+
+h2 {
+    color: #3a7bfd;
+    margin-bottom: 18px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-shadow: 0 2px 8px #000a;
+}
+
+
+
+form.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.contenedor-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 6px;
+}
+
+.contenedor-input label {
+    color: #3a7bfd;
+    font-size: 0.98rem;
+    margin-bottom: 2px;
+    font-weight: 500;
+}
+
+.contenedor-input input {
+    width: 100%;
+    padding: 7px 10px;
+    border: 1px solid #3a7bfd;
+    border-radius: 4px;
+    background: #181c24;
+    color: #fafbfc;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 2px;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.contenedor-input input:focus {
+    border: 1.5px solid #3a7bfd;
+    box-shadow: 0 0 0 2px #3a7bfd33;
+}
+
+.login-form a {
+    text-decoration: none;
+}
+
+
+form.form button {
+    font-family: inherit;
+    background: #3a7bfd;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 0;
+    font-size: 1rem;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px #3a7bfd33;
+}
+
+form.form button:hover {
+    background: #1741a6;
+    box-shadow: 0 4px 16px #3a7bfd55;
+}

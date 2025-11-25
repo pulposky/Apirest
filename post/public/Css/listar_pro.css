@@ -1,0 +1,75 @@
+/* Estilo coherente con el resto de la app: tabla centrada, tema oscuro y botones claros */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #2b2b33;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 36px;
+    color: #fafafa;
+}
+
+.container-table {
+    width: 90%;
+    max-width: 980px;
+    background: #292929;
+    border-radius: 10px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+}
+
+table#tablaDatos {
+    width: 100%;
+    border-collapse: collapse;
+    background: transparent;
+}
+
+thead th {
+    background: #202024;
+    color: #4caf50;
+    padding: 12px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.98rem;
+    border-bottom: 2px solid #404040;
+}
+
+tbody td {
+    padding: 12px 14px;
+    color: #eee;
+    border-bottom: 1px solid #333;
+}
+
+tbody tr:hover {
+    background: #222228;
+}
+
+.btn-listar {
+    display: inline-block;
+    background: #4f8cff;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin: 12px;
+}
+
+.btn-listar:hover {
+    background: #2563eb
+}
+
+/* Ajustes responsive */
+@media (max-width: 720px) {
+    .container-table {
+        width: 96%;
+    }
+
+    thead th,
+    tbody td {
+        padding: 10px 8px;
+        font-size: 0.95rem
+    }
+}

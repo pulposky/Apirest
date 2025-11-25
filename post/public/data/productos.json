@@ -1,0 +1,55 @@
+{"data":[
+    {
+        "id": 1,
+        "nombre": "papaya",
+        "descripcion": "cruda",
+        "precio": 3000,
+        "cantidad": 40
+    },
+    {
+        "id": 2,
+        "nombre": "leo",
+        "descripcion": "epp",
+        "precio": 3290,
+        "cantidad": 60
+    },
+    {
+        "id": 3,
+        "nombre": "apple",
+        "descripcion": "macbook",
+        "precio": 25000,
+        "cantidad": 40
+    },
+    {
+        "id": 4,
+        "nombre": "e",
+        "descripcion": "e",
+        "precio": 111111,
+        "cantidad": 12,
+        "fotosp": [
+            "e1759334181428.jpeg",
+            "e1759334181441.jpeg",
+            "e1759334181448.jpeg"
+        ]
+    },
+    {
+        "id": 5,
+        "nombre": "w",
+        "descripcion": "w",
+        "precio": 3,
+        "cantidad": 3,
+        "fotosp": [
+            "w1759771161067.jpeg"
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "ll",
+        "descripcion": "ll",
+        "precio": 77,
+        "cantidad": 77,
+        "fotosp": [
+            "ll1760971566796.jpeg"
+        ]
+    }
+]}

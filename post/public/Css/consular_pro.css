@@ -1,0 +1,137 @@
+#dato1[type="text"] {
+    width: 85%;
+    padding: 7px 10px;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    background: #fff;
+    color: #222;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.txt{
+    color: #fff;
+    margin-top: 10px;
+}
+
+table {
+    width: 60%;
+    min-width: 320px;
+    max-width: 600px;
+    margin: 32px auto 0 auto;
+    border-collapse: collapse;
+    background: #292929;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px #0002;
+}
+
+
+th,
+td {
+    padding: 14px 10px;
+    text-align: center;
+}
+
+th {
+    background: #222;
+    color: #4caf50;
+    font-weight: 600;
+    font-size: 1.08rem;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #4caf50;
+}
+
+td {
+    color: #fafafa;
+    font-size: 1rem;
+    border-bottom: 1px solid #333;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background: #232323;
+    transition: background 0.2s;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #817f7f;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+label {
+    color: #fff;
+}
+
+.login-page {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background: #292929;
+    padding: 32px 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px #0002;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 350px;
+    max-width: 420px;
+}
+
+h2 {
+    color: #fafafa;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+.login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+}
+
+.login-form a {
+    text-decoration: none;
+}
+
+
+#consulta {
+    font-family: inherit;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 9px 0;
+    font-size: 1rem;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    box-shadow: none;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/registro_usu.css">
+</head>
+<body>
+    <form id="registrarse">
+                <h1>Registrarse</h1>
+                <div>
+                    <div class="fila-arriba">
+                        <div class="contenedor-input">
+                            <label>
+                                Id <span class="req">*</span>
+                            </label>
+                            <input type="text" id="id" name="id">
+                        </div>
+                        <div class="contenedor-input">
+                            <label>
+                                Nombre <span class="req">*</span>
+                            </label>
+                            <input type="text" id="nombre" name="nombre">
+                        </div>
+
+                        <div class="contenedor-input">
+                            <label>
+                                Usuario <span class="req">*</span>
+                            </label>
+                            <input type="text" id="usuario" name="usuario">
+                        </div>
+                    </div>
+                    <div class="contenedor-input">
+                        <label>
+                            Password <span class="req">*</span>
+                        </label>
+                        <input type="password" id="password" name="password">
+                    </div>
+
+                    <div class="contenedor-input">
+                            <label>
+                                Email <span class="req">*</span>
+                            </label>
+                        <input type="email" id="correo" name="correo">
+                    </div>
+
+                    <div class="contenedor-input">
+                            <label>
+                                Telefono <span class="req">*</span>
+                            </label>
+                        <input type="text" id="telefono" name="telefono">
+                    </div>
+
+                    <!-- <div class="contenedor-input">
+                        <label>
+                            Foto perfil <span class="req">*</span>
+                        </label>
+                        <input type="file" id="foto" name="foto">
+                    </div> -->
+                    <div class="contenedor-input">
+                        <label>
+                            Rol <span class="req">*</span>
+                        </label>
+                        <select id="rol" name="rol">
+                            <option value="">Selecciona un rol</option>
+                            <option value="usuario">Usuario</option>
+                            <option value="administrador">Administrador</option>
+                        </select>
+                    </div>
+                    <div class="contenedor-input">
+                        <button id="btn">Registrar</button>
+                    </div>
+                </div>
+        </form>
+
+        <script type="module" src="../Js/registro_usu.js"></script>
+</body>
+</html>
