@@ -189,16 +189,6 @@ function mostrarError(){
 
 
 
-
-
-
-
-
-
-
-
-
-
 //eliminacion de productos
 export async function pedirDatosEliminar(dato1){
     let url = `/productos/consultar/${dato1}`
@@ -218,6 +208,7 @@ export async function pedirDatosEliminar(dato1){
 
     id.textContent = producto.id 
     nombre.textContent = producto.nombre
+    console.log(producto) 
     descripcion.textContent = producto.descripcion 
     cantidad.textContent = producto.cantidad 
     precio.textContent = producto.precio 

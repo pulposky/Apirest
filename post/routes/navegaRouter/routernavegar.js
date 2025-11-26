@@ -1,5 +1,5 @@
 const express = require('express') // Importa Express para crear routers y manejar rutas
-//const path = require('path') // Utilidad para gestionar rutas de archivos
+const path = require('path') // Utilidad para gestionar rutas de archivos
 const cors = require('cors') 
 //const jwt = require('jsonwebtoken') // Biblioteca para manejar JWT
 const dotenv = require('dotenv') // Carga variables de entorno

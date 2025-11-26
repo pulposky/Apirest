@@ -20,7 +20,7 @@ async function consultarProducto(){
 //metodo para obtener producto por nombre
 async function consultarProductoPorNombre(nombre){
     return new Promise((resuelta, rechazada)=>{
-        conectar.query('SELECT * FROM productos p JOIN imagenes_producto i ON p.id = i.producto_id WHERE nombre = ?', [nombre], (error, registros)=>{
+        conectar.query('SELECT * FROM imagenes_producto i JOIN  productos p  ON p.id = i.producto_id WHERE nombre = ?', [nombre], (error, registros)=>{
             if(error){
                 rechazada(error)
             }
