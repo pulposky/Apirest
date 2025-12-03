@@ -19,19 +19,40 @@ async function consultarProducto(){
 
 //metodo para obtener producto por nombre
 async function consultarProductoPorNombre(nombre){
-    return new Promise((resuelta, rechazada)=>{
-        conectar.query('SELECT * FROM imagenes_producto i JOIN  productos p  ON p.id = i.producto_id WHERE nombre = ?', [nombre], (error, registros)=>{
-            if(error){
+    return new Promise((resuelta, rechazada) => {
+        conectar.query('SELECT * FROM imagenes_producto i JOIN  productos p  ON p.id = i.producto_id WHERE nombre = ?', [nombre], (error, registros) => {
+            if (error) {
                 rechazada(error)
+                return
             }
-            resuelta(registros)
+
+            // Agrupar las filas en un solo objeto producto usando reduce()
+            const producto = registros.reduce((acc, row) => {
+                // inicializar campos del producto con la primera fila
+                if (!acc.id) {
+                    acc.id = row.id
+                    acc.nombre = row.nombre
+                    acc.descripcion = row.descripcion
+                    acc.precio = row.precio
+                    acc.cantidad = row.cantidad
+                    acc.imagenes = []
+                }
+
+                // añadir la ruta de imagen si existe
+                if (row.ruta_img) {
+                    acc.imagenes.push(row.ruta_img)
+                }
+
+                return acc
+            }, {})
+
+            console.log('registros recibidos:', registros.length)
+            console.log('producto agrupado:', producto)
+
+            // Devolver un array con un único producto para conservar compatibilidad
+            resuelta([producto])
         })
-
-
-// JOIN clientes c ON p.cliente_id = c.cliente_id
-// WHERE c.nombre = 'Juan Perez'
-// ORDER BY p.fecha ASC, p.pedido_id ASC;
-})
+    })
 }
 
 //metodo para registrar un nuevo producto

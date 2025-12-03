@@ -112,7 +112,7 @@ export async function pedirDatos(dato1){ // Función asincrónica que realiza la
     const url = `/productos/consultar/${dato1}` // Construye la URL de la API para consultar el producto por id o nombre
 
     try{ // Intento de petición y parseo
-        const respuesta = await fetch(url, { credentials: 'same-origin' }) // Realiza la petición HTTP GET incluyendo cookies
+        const respuesta = await fetch(url) // Realiza la petición HTTP GET
         const datos = await respuesta.json() // Parsea la respuesta JSON del servidor
 
         // Si el campo de búsqueda está vacío (revisamos el value) -> error
@@ -157,25 +157,23 @@ function mostrarDatos(datos){
     cantidad.textContent = producto.cantidad 
     precio.textContent = producto.precio    
     
-    // limpiar imágenes previas
-    let imagenes = document.getElementById('imagenes') 
-    if (imagenes) {
-        imagenes.innerHTML = ''
-        
-        // Si datos es un array (resultado del JOIN con imagenes_producto), iterar sobre todas las filas
+    const imagenesEl = document.getElementById('imagenes')
+    if (imagenesEl) {
+        imagenesEl.innerHTML = ''
+
+        // Obtener las URLs de las imágenes desde el producto
+        let urls = []
         if (Array.isArray(datos) && datos.length > 0) {
-            datos.forEach(fila => {
-                // cada fila tiene ruta_img con la ruta de la imagen
-                if (fila.ruta_img) {
-                    let img = document.createElement('img')
-                    img.src = fila.ruta_img // La ruta ya viene completa desde la BD
-                    img.width = 100
-                    img.style.marginRight = '5px'
-                    imagenes.appendChild(img)
-                    console.log('Imagen añadida:', fila.ruta_img)
-                }
-            })
+                urls = datos[0].imagenes
         }
+        // Mostrar cada URL como <img>
+        urls.forEach(url => {
+            const img = document.createElement('img')
+            img.src = url
+            img.width = 100
+            img.style.marginRight = '5px'
+            imagenesEl.appendChild(img)
+        })
     }
 } 
 
